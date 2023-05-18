@@ -8,9 +8,12 @@ router.get("/products", productController.getAllProducts)
 // Obtener todos los productos por cateogria 
 // Obtener un específico
 // Añadir un producto
+router.post("/product", productController.addProduct)
+
+
 // Eliminar producto
-router.delete("/products", productController.deleteProduct)
-// Modificar
+router.delete("/product/:id", productController.deleteProduct)
+// Modificar producto
 
 
 module.exports = router;
